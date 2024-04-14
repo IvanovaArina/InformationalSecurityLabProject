@@ -1,5 +1,5 @@
 package constants;
 
 public class ParameterConstants {
-    public static final String RANDOM = "random";
+    public static final String GENERATE = "generate";
 }

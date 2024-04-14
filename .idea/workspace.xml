@@ -5,33 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c750cfe4-5aeb-4d2e-8ebb-1a445284dfe5" name="Changes" comment="Second commit">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntryPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/AlgorithmNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/AlgorithmNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/ApplicationCompletionConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ApplicationCompletionConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/FilePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/FunctionCodeConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/FunctionCodeConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/ParameterConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ParameterConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exeption/ApplicationException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exeption/ApplicationException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/FunctionCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/FunctionCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repository/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DecryptAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DecryptAES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DecryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DecryptRSA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DigitalSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DigitalSignature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/EncryptAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EncryptAES.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/EncryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EncryptRSA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Function.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/UnsupportedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UnsupportedFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/VerifyDigitalSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/VerifyDigitalSignature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsoleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/GUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GUIView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/IView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/IView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

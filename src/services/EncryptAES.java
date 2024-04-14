@@ -10,7 +10,7 @@ import javax.crypto.spec.SecretKeySpec;
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
-import static constants.ParameterConstants.RANDOM;
+import static constants.ParameterConstants.GENERATE;
 import static constants.AlgorithmNames.AES;
 import static constants.FilePaths.*;
 public class EncryptAES implements Function{
@@ -21,7 +21,7 @@ public class EncryptAES implements Function{
         try {
             String textToEncrypt = readTextFromFile(TEXT);
             String keyString = null;
-            if (parameters[1] == RANDOM) {
+            if (parameters[1] == GENERATE) {
                 generateKeyAES128();
                 keyString = readTextFromFile(SYMMETRIC_KEY);
             }
