@@ -23,7 +23,7 @@ public class DecryptAES implements Function{
     @Override
     public Result execute(String[] parameters){
         try {
-            if(parameters[1] != WAS_GENERATED) {
+            if(!parameters[1].equals(WAS_GENERATED)) {
                 rewriteTextToFile(SYMMETRIC_KEY, parameters[1]);
             }
             String encryptedText = new String(Files.readAllBytes(ENCRYPTED_AES.toPath()));

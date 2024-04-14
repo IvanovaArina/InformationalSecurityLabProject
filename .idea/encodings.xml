@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/EntryPoint.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/files/privateKey.txt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/files/privateKeyRSA.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/files/text.txt" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/services/EncryptAES.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

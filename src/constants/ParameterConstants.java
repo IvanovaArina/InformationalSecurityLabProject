@@ -17,9 +17,9 @@ public class ParameterConstants {
     public static final String GET_PARAMETERS_FOR_MODE4 = "Where your pair of keys generated or you want to enter the key?";
     public static final String MODE4_1 = "1. The pair of keys was generated";
     public static final String MODE4_2 = "2. I want to enter my private key";
-    public static final String GET_PARAMETERS_FOR_MODE5 = "...";
     public static final String GET_PARAMETERS_FOR_MODE6 = "...";
-
+    public static final String MODE6_1 = "1. The signature was generated";
+    public static final String MODE6_2 = "2. I want to enter signature to verify";
 
 
 }

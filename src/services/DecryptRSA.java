@@ -5,7 +5,6 @@ import exeption.ApplicationException;
 import repository.ResultCode;
 import javax.crypto.Cipher;
 import java.io.File;
-import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
@@ -20,11 +19,11 @@ public class DecryptRSA implements Function{
     @Override
     public Result execute(String[] parameters){
         try {
-            if(parameters[1] != WAS_GENERATED) {
-                rewriteTextToFile(PRIVATE_KEY, parameters[1]);
+            if(!parameters[1].equals( WAS_GENERATED)) {
+                rewriteTextToFile(PRIVATE_KEY_RSA, parameters[1]);
             }
             String encryptedText = new String(Files.readAllBytes(ENCRYPTED_RSA.toPath()));
-            String encodedPrivateKey = new String(Files.readAllBytes(PRIVATE_KEY.toPath()));
+            String encodedPrivateKey = new String(Files.readAllBytes(PRIVATE_KEY_RSA.toPath()));
 
             PrivateKey originalPrivateKey = decodePrivateKeyFromString(encodedPrivateKey);
             // Декодируем текст из Base64 в байты
@@ -48,8 +47,5 @@ public class DecryptRSA implements Function{
         PKCS8EncodedKeySpec keySpec = new PKCS8EncodedKeySpec(keyBytes);
         return keyFactory.generatePrivate(keySpec);
     }
-    private PrivateKey readPrivateKeyFromFile(File file) throws Exception {
-        String keyString = readTextFromFile(file);
-        return decodePrivateKeyFromString(keyString);
-    }
+
 }

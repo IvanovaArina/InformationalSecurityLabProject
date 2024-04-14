@@ -26,7 +26,7 @@ public class ConsoleView implements IView{
                 System.out.println(MODE3_1);
                 System.out.println(MODE3_2);
                 parameters[1] = scanner.nextLine();
-                if (parameters[1] != WAS_GENERATED) {
+                if (!parameters[1].equals(WAS_GENERATED)) {
                     System.out.println(IF_NOT_GENERATED);
                     parameters[1] = scanner.nextLine();
                 }
@@ -36,25 +36,27 @@ public class ConsoleView implements IView{
                 System.out.println(MODE4_1);
                 System.out.println(MODE4_2);
                 parameters[1] = scanner.nextLine();
-                if (parameters[1] != WAS_GENERATED) {
+                if (parameters[1].equals(WAS_GENERATED)) {
                     System.out.println(IF_NOT_GENERATED);
                     parameters[1] = scanner.nextLine();
                 }
                 break;
-            case "5":
-                System.out.println(GET_PARAMETERS_FOR_MODE5);
-                break;
             case "6":
                 System.out.println(GET_PARAMETERS_FOR_MODE6);
-                break;
+                System.out.println(MODE6_1);
+                System.out.println(MODE6_2);
+                parameters[1] = scanner.nextLine();
+                if (!parameters[1].equals(WAS_GENERATED)) {
+                    System.out.println(IF_NOT_GENERATED);
+                    parameters[1] = scanner.nextLine();
+                    break;
+                }
             default: break;
-
         }
         return parameters;
     }
     @Override
     public void printResult(Result result){
-        //TODO printResult Console
         switch(result.getResultCode()) {
             case OK -> System.out.println(SUCCESS);
             case ERROR -> System.out.println(EXCEPTION + result.getApplicationException().getMessage());

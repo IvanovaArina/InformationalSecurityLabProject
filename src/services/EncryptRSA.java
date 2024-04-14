@@ -4,16 +4,12 @@ import entity.Result;
 import exeption.ApplicationException;
 import repository.ResultCode;
 import javax.crypto.Cipher;
-import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.security.*;
-import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 import static constants.AlgorithmNames.RSA;
 import static constants.ApplicationExceptionMessages.ENCRYPT_RSA_EXCEPTION_MESSAGE;
 import static constants.FilePaths.*;
-
-
 public class EncryptRSA implements Function{
     //parameters[0] - mode of work
     //parameters[1] - public key/generate
@@ -27,10 +23,10 @@ public class EncryptRSA implements Function{
 
             // Кодирование ключа в Base64 для сохранения
             String encodedPublicKey = Base64.getEncoder().encodeToString(publicKey.getEncoded());
-            rewriteTextToFile(PUBLIC_KEY, encodedPublicKey);
+            rewriteTextToFile(PUBLIC_KEY_RSA, encodedPublicKey);
             // Кодирование ключа в Base64 для сохранения
             String encodedPrivateKey = Base64.getEncoder().encodeToString(privateKey.getEncoded());
-            rewriteTextToFile(PRIVATE_KEY, encodedPrivateKey);
+            rewriteTextToFile(PRIVATE_KEY_RSA, encodedPrivateKey);
 
             Cipher cipher = Cipher.getInstance(RSA);
             cipher.init(Cipher.ENCRYPT_MODE, publicKey);
@@ -43,7 +39,7 @@ public class EncryptRSA implements Function{
         }
         return new Result(ResultCode.OK);
     }
-    private KeyPair generateKeyPair() throws Exception {
+    public static  KeyPair generateKeyPair() throws Exception {
         KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(RSA);
         keyPairGenerator.initialize(2048);
         return keyPairGenerator.generateKeyPair();

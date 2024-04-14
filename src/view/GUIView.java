@@ -10,7 +10,7 @@ public class GUIView implements IView{
     }
     @Override
     public void printResult(Result result){
-        //TODO printResulr GUI
+        //TODO printResult GUI
         //output in windows frame
     }
 }
