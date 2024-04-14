@@ -1,2 +1,5 @@
-package constants;public class ParameterConstants {
+package constants;
+
+public class ParameterConstants {
+    public static final String RANDOM = "random";
 }

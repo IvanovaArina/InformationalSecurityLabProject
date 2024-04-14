@@ -1,2 +1,5 @@
-package repository;public enum ResultCode {
+package repository;
+
+public enum  ResultCode {
+    OK, ERROR
 }
