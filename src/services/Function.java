@@ -22,7 +22,7 @@ public interface Function {
             writer.write(content);
         }
     }
-    // Метод для записи ключа в файл
+
 
 
 }

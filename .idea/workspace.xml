@@ -4,11 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c750cfe4-5aeb-4d2e-8ebb-1a445284dfe5" name="Changes" comment="Second commit">
+    <list default="true" id="c750cfe4-5aeb-4d2e-8ebb-1a445284dfe5" name="Changes" comment="3">
+      <change afterPath="$PROJECT_DIR$/src/constants/ApplicationExceptionMessages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/files/encryptedRSA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/ParameterConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ParameterConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/decryptedAES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/decryptedAES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/decryptedRSA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/decryptedRSA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/encryptedAES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/encryptedAES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/privateKey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/privateKey.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/publicKey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/publicKey.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/symmetricKey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/symmetricKey.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/DecryptAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DecryptAES.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/DecryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DecryptRSA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/DigitalSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DigitalSignature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/EncryptAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EncryptAES.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/EncryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EncryptRSA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/UnsupportedFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/UnsupportedFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/VerifyDigitalSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/VerifyDigitalSignature.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsoleView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,15 +57,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH&quot;: &quot;142&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH": "142",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "File.Encoding"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arina\IdeaProjects\TSI4\src\Files" />
@@ -64,6 +81,15 @@
       <option name="presentableId" value="Default" />
       <updated>1712862522946</updated>
     </task>
+    <task id="LOCAL-00001" summary="3">
+      <option name="closed" value="true" />
+      <created>1713097592302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713097592302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -91,37 +117,57 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Second commit" />
+    <MESSAGE value="3" />
+    <option name="LAST_COMMIT_MESSAGE" value="3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/EntryPoint.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="1" />
+          <line>14</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/EntryPoint.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/app/Application.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/EntryPoint.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/src/app/Application.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/EntryPoint.java</url>
           <line>13</line>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/EntryPoint.java</url>
-          <line>14</line>
-          <option name="timeStamp" value="5" />
+          <url>file://$PROJECT_DIR$/src/services/DecryptAES.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/DecryptAES.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/services/DecryptAES.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

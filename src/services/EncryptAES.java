@@ -7,56 +7,47 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectOutputStream;
+import java.nio.charset.StandardCharsets;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
-import static constants.ParameterConstants.GENERATE;
+
+import static constants.ApplicationExceptionMessages.ENCRYPT_AES_EXCEPTION_MESSAGE;
 import static constants.AlgorithmNames.AES;
 import static constants.FilePaths.*;
 public class EncryptAES implements Function{
-    //parameters[0] - что делает
+    //parameters[0] - С‡С‚Рѕ РґРµР»Р°РµС‚
     //parameters[1] - SymmetricKey/random
     @Override
     public Result execute(String[] parameters){
         try {
             String textToEncrypt = readTextFromFile(TEXT);
-            String keyString = null;
-            if (parameters[1] == GENERATE) {
-                generateKeyAES128();
-                keyString = readTextFromFile(SYMMETRIC_KEY);
-            }
-            else {
-                keyString = parameters[1];
-            }
-            // Декодирование строки ключа из Base64 в массив байтов
-            byte[] keyBytes = Base64.getDecoder().decode(keyString);
-            // Создание объекта SecretKey из массива байтов
-            SecretKey secretKey = new SecretKeySpec(keyBytes, AES);
+            SecretKey secretKey = generateKeyAES128();
+
+            // РљРѕРґРёСЂРѕРІР°РЅРёРµ РєР»СЋС‡Р° РІ Base64
+            String encodedKey = Base64.getEncoder().encodeToString(secretKey.getEncoded());
+            rewriteTextToFile(SYMMETRIC_KEY, encodedKey);
+
             Cipher cipher = Cipher.getInstance(AES);
             cipher.init(Cipher.ENCRYPT_MODE, secretKey);
-            byte[] encryptedBytes = cipher.doFinal(textToEncrypt.getBytes());
-            // Запись зашифрованного текста в файл
+            byte[] encryptedBytes = cipher.doFinal(textToEncrypt.getBytes(StandardCharsets.UTF_8));
             String encryptedText = Base64.getEncoder().encodeToString(encryptedBytes);
+            rewriteTextToFile(ENCRYPTED_AES, encryptedText);
+
         } catch (Exception e) {
-            return new Result(ResultCode.ERROR, new ApplicationException("EncryptAES operation finish with exception", e));
+            return new Result(ResultCode.ERROR, new ApplicationException(ENCRYPT_AES_EXCEPTION_MESSAGE, e));
         }
         return new Result(ResultCode.OK);
     }
-    public void generateKeyAES128() {
-        try {
+    public SecretKey generateKeyAES128() throws NoSuchAlgorithmException {
             KeyGenerator keyGenerator = KeyGenerator.getInstance(AES);
             keyGenerator.init(128);
-            SecretKey secretKey = keyGenerator.generateKey();
-            // Преобразуем ключ в массив байтов
-            byte[] keyBytes = secretKey.getEncoded();
-            // Кодируем ключ в строку с использованием Base64
-            String keyString = Base64.getEncoder().encodeToString(keyBytes);
-            rewriteTextToFile(SYMMETRIC_KEY, keyString);
-        }
-        catch(NoSuchAlgorithmException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+            return keyGenerator.generateKey();
+
     }
+
+
 }
