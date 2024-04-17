@@ -4,24 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c750cfe4-5aeb-4d2e-8ebb-1a445284dfe5" name="Changes" comment="RSA AES in Console view completely finished">
-      <change afterPath="$PROJECT_DIR$/src/constants/SignatureVerificationConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/files/publicKeySignature.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/files/signature.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c750cfe4-5aeb-4d2e-8ebb-1a445284dfe5" name="Changes" comment="Digital signature">
+      <change afterPath="$PROJECT_DIR$/src/view/IViewMode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/IViewResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ViewMode1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ViewMode2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ViewResponse1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ViewResponse2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/AlgorithmNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/AlgorithmNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/FilePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/ParameterConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ParameterConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/encryptedRSA" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/privateKeySignature.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/privateKey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/privateKeyRSA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/files/publicKey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/publicKeyRSA.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DecryptAES.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DecryptAES.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DecryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DecryptRSA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/DigitalSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/DigitalSignature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/EncryptRSA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/EncryptRSA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/VerifyDigitalSignature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/VerifyDigitalSignature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ConsoleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsoleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EntryPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EntryPoint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/encryptedAES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/encryptedAES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/encryptedRSA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/encryptedRSA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/privateKeyRSA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/privateKeyRSA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/publicKeyRSA.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/publicKeyRSA.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/symmetricKey.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/symmetricKey.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/files/text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/files/text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/Function.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/GUIView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/GUIView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -70,6 +68,20 @@
       <recent name="C:\Users\arina\IdeaProjects\TSI4\src\Files" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="EntryPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="EntryPoint" />
+      <module name="TSI4" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.EntryPoint" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -95,7 +107,23 @@
       <option name="project" value="LOCAL" />
       <updated>1713124291935</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Digital signature">
+      <option name="closed" value="true" />
+      <created>1713131581045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713131581045</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Digital signature">
+      <option name="closed" value="true" />
+      <created>1713131643821</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713131643821</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,7 +153,8 @@
     <MESSAGE value="Second commit" />
     <MESSAGE value="3" />
     <MESSAGE value="RSA AES in Console view completely finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="RSA AES in Console view completely finished" />
+    <MESSAGE value="Digital signature" />
+    <option name="LAST_COMMIT_MESSAGE" value="Digital signature" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -154,6 +183,16 @@
           <url>file://$PROJECT_DIR$/src/services/VerifyDigitalSignature.java</url>
           <line>32</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/view/GUIView.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/view/ViewResponse1.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
